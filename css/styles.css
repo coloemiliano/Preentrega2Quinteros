@@ -22,35 +22,12 @@ body {
     min-height: 100vh;
 }
 
-.nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .nav--logo{
     display: inline;
     margin: 0;
     width: 50px;
 }
-
-.menu li{
-     
-    list-style: none;
-    display: inline;
-    margin-left: 15px;
-
-}
-
-.nav--enlace{
-    padding: 5px 7px;
-    background-color: #d8cec3;
-    border: solid black 1px;
-    border-radius: 40%;  
-    color: rgb(49, 48, 48);
-}
-
 
 .nav--enlace:hover{
     background-color: rgb(144, 144, 144);
@@ -88,9 +65,30 @@ h1{
 }
 
 .footer {
-    background-color: #0b3cb7;
+    display: flex;  
+    background-color: #4a609a;
     margin-top: auto;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
 }
+.autoria{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: #4a609a;
+}
+
+.bi-instagram{
+    color: rgb(181, 11, 130);
+    font-size: 2rem;
+}
+.bi-whatsapp{
+    color: rgb(11, 228, 11);
+    font-size: 2rem;
+}
+
 /* pagina inicio*/
 
 .parrafos{
@@ -207,7 +205,7 @@ h1{
     display: none;
 }
 /* card de menu*/
-.card {
+.card-menu {
     background-color: rgba(0, 0, 0, 0.781);
     color: antiquewhite;
     width: 200px;
@@ -215,16 +213,16 @@ h1{
     margin: 20px auto;
     text-align: center;
 }
-.card img{
+.card-menu img{
     width: 100px;
     display: block;
     margin: 0 auto;
 }
 
-.card p{
+.card-menu p{
     margin-bottom: 10px;
 }
-.card h3{
+.card-menu h3{
     margin: 15px;
 }
 

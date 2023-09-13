@@ -7,31 +7,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-    <!--abajo es el archivo css-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+<!--abajo es el archivo css-->
     <link rel="stylesheet" href="css/styles.css">
     <title>Inicio</title>
 </head>
 <body id="fondoimg">
-    <header >
-        <nav class="nav">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
             <img src="img/logoMauiM.png" alt="logo" class="nav--logo">
-            <ul class="menu">
-                <li>
-                    <a href="index.html" class="nav--enlace">Inicio</a>
-                </li>
-                <li>
-                    <a href="pages/menu.html" class="nav--enlace">Menu</a>
-                </li>
-                <li>
-                    <a href="pages/galeria.html" class="nav--enlace">Galeria</a>
-                </li>
-                <li>
-                    <a href="pages/mapa.html" class="nav--enlace">Mapa</a>
-                </li>
-                <li>
-                    <a href="pages/contacto.html" class="nav--enlace">Contacto</a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNavAltMarkup"  class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link" href="pages/menu.html">Menu</a>
+                <a class="nav-link" href="pages/galeria.html">Galeria</a>
+                <a class="nav-link" href="pages/mapa.html">Mapa</a>
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                </div>
+            </div>
+            </div>
         </nav>
     </header>
     <section id="arriba">
@@ -58,19 +58,23 @@
             </div>
         </div>  
     </section>
-    <footer class="footer">
-        <p>Este sitio fue creado por Emiliano</p>
-        <p>Seguinos en:</p>
-        <div>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="img/logoInsta.png" alt="logoInstagram" class="logoFooter">
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=5491139191188" target="_blank">
-                <img src="img/logoWpp.png" alt="logoWpp" class="logoFooter">
-            </a>
+    <footer>
+        <div class="footer">
+            <a href="#arriba">Volver arriba</a>
+            <div class="footer-redes">
+                <p>Seguinos en:</p>
+                <a href="https://instagram.com/maui_bsas?igshid=MWZjMTM2ODFkZg==" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://wa.me/1139191188" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </div>
         </div>
-        <a href="#arriba">Volver arriba</a>
+        <p class="autoria">Este sitio fue creado por Emiliano Quinteros</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 </body>
 
 </html>
