@@ -64,13 +64,22 @@ h1{
     position: end;
 }
 
-.footer {
+.footerI {
     display: flex;  
     background-color: #4a609a;
     margin-top: auto;
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
+}
+
+.footer {
+    display: flex;  
+    background-color: #4a609a;
+    margin-top: auto;
+    padding-right: 10px;
+    flex-direction: row;
+    justify-content: end;
 }
 .autoria{
     display: flex;
@@ -120,7 +129,7 @@ h1{
     }
     .parrafos{
         width: 300px;
-        height: 510px;
+        height: 650px;
         border: solid 1px;
     }
 
@@ -161,8 +170,11 @@ h1{
     text-align: center;
     padding: 10px;
     margin: 20px auto;
-    border-radius: 10%;
+    border-radius: 20%;
 
+}
+.formulario div{
+    margin-top: 5px;
 }
 
 
