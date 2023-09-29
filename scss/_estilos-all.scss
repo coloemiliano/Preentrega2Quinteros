@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: rgba(163, 161, 161, 0.973);
+    padding: 15px;
+    z-index: 1;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+    text-decoration: underline;
+}
+#fondoimg{
+    background-image: url(../img/logoMaui.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 768px) {
+    #fondoimg{
+        background-image: url(../img/imgFondo.png);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        }
+}
+
+.nav--logo{
+    display: inline;
+    margin: 0;
+    width: 50px;
+}
+
+.nav--enlace:hover{
+    background-color: rgb(144, 144, 144);
+    color: $color1-page;
+}
+
+
+
+.imginicio{
+    width: 100px;
+    display: block;
+    margin: 10px auto;
+    border: solid 0.5px;
+    border-radius: 100%;
+}
+
+
+
+
+
+
+/* pie de pagina*/
+.logoFooter {
+    width: 30px;
+    border-radius: 100%;
+    position: end;
+}
+
+.footerI {
+    display: flex;  
+    background-color: $color2-page;
+    margin-top: auto;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.footer {
+    display: flex;  
+    background-color: $color2-page;
+    margin-top: auto;
+    padding-right: 10px;
+    flex-direction: row;
+    justify-content: end;
+}
+.autoria{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: $color2-page;
+}
+
+.bi-instagram{
+    color: rgb(181, 11, 130);
+    font-size: 2rem;
+}
+.bi-whatsapp{
+    color: rgb(11, 228, 11);
+    font-size: 2rem;
+}

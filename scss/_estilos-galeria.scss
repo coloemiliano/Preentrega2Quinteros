@@ -1,0 +1,77 @@
+/*Galeria de imagenes*/
+#galeriaFoto {
+    display: grid;
+    grid-template-areas: 
+    "foto1 foto1 foto2 foto3 foto3"
+    "foto1 foto1 foto2 foto3 foto3"
+    "foto4 foto5 foto2 foto6 foto7" 
+    "foto8 foto8 foto2 foto9 foto9" 
+    "foto8 foto8 foto2 foto9 foto9";
+    gap: 3px;
+    margin: 20px 0;
+}
+
+.foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8, .foto9 {
+    max-width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: solid   rgba(245, 222, 179, 0.84) 1px;
+
+}
+
+.foto1 {
+    background-image: url(../img/mauicafe71.jpg);
+    grid-area: foto1;
+}
+.foto2 {
+    background-image: url(../img/mauicafe35.jpg);
+    grid-area: foto2;
+    height: 100%;
+}
+.foto3 {
+    background-image: url(../img/mauicafe51.jpg);
+    grid-area: foto3;
+}
+.foto4 {
+    background-image: url(../img/mauiBarra.jpg);
+    grid-area: foto4;
+}   
+.foto5 {
+    background-image: url(../img/mauicafe93.jpg);
+    grid-area: foto5;
+}    
+.foto6 {
+    background-image: url(../img/logoMauiM.png);
+    grid-area: foto6;
+}    
+.foto7 {
+    background-image: url(../img/mauicafe116.jpg);
+    grid-area: foto7;
+}    
+.foto8 {
+    background-image: url(../img/mauicafe109.jpg);
+    grid-area: foto8;
+}    
+.foto9 {
+    background-image: url(../img/mauicafe158.jpg);
+    grid-area: foto9;
+}
+
+
+@media (max-width: 991px) {
+    #galeriaFoto {
+        grid-template-areas: 
+        "foto1 foto1 foto2"
+        "foto4 foto5 foto2"
+        "foto6 foto7 foto3"
+        "foto8 foto8 foto9";
+    }
+}
+@media (max-width: 500px) {
+    #galeriaFoto {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,350 +1,375 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-header{
-    position: sticky;
-    top: 0;
-    background-color: rgba(163, 161, 161, 0.973);
-    padding: 15px;
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(163, 161, 161, 0.973);
+  padding: 15px;
+  z-index: 1;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-
-.nav--logo{
-    display: inline;
-    margin: 0;
-    width: 50px;
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  text-decoration: underline;
 }
 
-.nav--enlace:hover{
-    background-color: rgb(144, 144, 144);
-    color: #d8cec3;
+#fondoimg {
+  background-image: url(../img/logoMaui.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
-
-
-.imginicio{
-    width: 100px;
-    display: block;
-    margin: 10px auto;
-    border: solid 0.5px;
-    border-radius: 100%;
-}
-
-
-h1{
-    text-align: center;
-    font-size: 4rem;
-    text-decoration: underline;
-}
-
-#fondoimg{
+@media (min-width: 768px) {
+  #fondoimg {
     background-image: url(../img/imgFondo.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+  }
 }
+.nav--logo {
+  display: inline;
+  margin: 0;
+  width: 50px;
+}
+
+.nav--enlace:hover {
+  background-color: rgb(144, 144, 144);
+  color: #d8cec3;
+}
+
+.imginicio {
+  width: 100px;
+  display: block;
+  margin: 10px auto;
+  border: solid 0.5px;
+  border-radius: 100%;
+}
+
 /* pie de pagina*/
 .logoFooter {
-    width: 30px;
-    border-radius: 100%;
-    position: end;
+  width: 30px;
+  border-radius: 100%;
+  position: end;
 }
 
 .footerI {
-    display: flex;  
-    background-color: #4a609a;
-    margin-top: auto;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
+  display: flex;
+  background-color: #4a609a;
+  margin-top: auto;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer {
-    display: flex;  
-    background-color: #4a609a;
-    margin-top: auto;
-    padding-right: 10px;
-    flex-direction: row;
-    justify-content: end;
-}
-.autoria{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    background-color: #4a609a;
+  display: flex;
+  background-color: #4a609a;
+  margin-top: auto;
+  padding-right: 10px;
+  flex-direction: row;
+  justify-content: end;
 }
 
-.bi-instagram{
-    color: rgb(181, 11, 130);
-    font-size: 2rem;
-}
-.bi-whatsapp{
-    color: rgb(11, 228, 11);
-    font-size: 2rem;
-}
-
-/* pagina inicio*/
-
-.parrafos{
-    background-color: rgba(0, 0, 0, 0.219);
-    color: black;
-    width: 300px;
-    height: 650px;    
-    margin: 20px auto;
-    text-align: center;
-    padding: 5px;
+.autoria {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: #4a609a;
 }
 
-.parrafos img{
-    width: 150px;
-    display: block;
-    margin: 0 auto;
-
+.bi-instagram {
+  color: rgb(181, 11, 130);
+  font-size: 2rem;
 }
-.parrafos p{
-    margin-top: 5px;
+
+.bi-whatsapp {
+  color: rgb(11, 228, 11);
+  font-size: 2rem;
+}
+
+.parrafos {
+  background-color: rgba(0, 0, 0, 0.575);
+  color: wheat;
+  width: 300px;
+  height: 550px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 6px;
+}
+.parrafos img {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+.parrafos p {
+  margin-top: 15px;
 }
 
 @media (min-width: 768px) {
-    .parrafosPadre{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        margin: 10px 30px;
-    }
-    .parrafos{
-        width: 300px;
-        height: 650px;
-        border: solid 1px;
-    }
-
+  .parrafosPadre {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 10px 30px;
+  }
+  .parrafos {
+    border: solid 1px;
+  }
 }
-@media (min-width: 992px){
-    .parrafos {
-        margin: 10px auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        color: rgb(0, 0, 0);
-        width: auto;
-        height: auto;  
-    }
-    .parrafos img{
-        width: 200px;
-    }
-    
-    .reverse {
-        flex-direction: row-reverse;
-    }
-    
-    .reverse p {
-        text-align: right;
-    }
-}
-
-
-.mapa{
-    margin: 15px;
-}
-/*Foemulario de contactos*/
-.formulario {
-    background-color: #d8cec3;
-    width: 450px;
-    border: solid black 2px;
-    text-align: center;
-    padding: 10px;
-    margin: 20px auto;
-    border-radius: 20%;
-
-}
-.formulario div{
-    margin-top: 5px;
-}
-
-
-
-/*Menu del restaurnate*/
-.MenuMaui{
+@media (min-width: 992px) {
+  .parrafos {
+    margin: 10px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: rgba(255, 235, 205, 0.123);
+    color: wheat;
+    width: auto;
+    height: auto;
+  }
+  .parrafos img {
+    width: 300px;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  .reverse p {
+    text-align: right;
+  }
 }
-
-.menuText {
-    margin: 10px auto;
-}
-
-.menuText div{
-    margin: 20px;
-    border-bottom: solid #d8cec3;
-}
-
-.menuText   ul{
-    list-style: none;
-    display: inline;
-    margin: 10px 20px;  
-    
-}
-.menuText h2{
-    color: #0b3cb7;
-    font-style: oblique;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 5px;
-}
-
-#MenuDia {
-    display: none;
-}
-#MenuNoche {
-    display: none;
-}
-/* card de menu*/
-.card-menu {
-    background-color: rgba(0, 0, 0, 0.781);
-    color: antiquewhite;
-    width: 200px;
-    padding: 10px;
-    margin: 20px auto;
-    text-align: center;
-}
-.card-menu img{
-    width: 100px;
-    display: block;
-    margin: 0 auto;
-}
-
-.card-menu p{
-    margin-bottom: 10px;
-}
-.card-menu h3{
-    margin: 15px;
-}
-
-@media (min-width: 768px) {
-    .MenuMaui {
-        display: grid;
-        grid-template-areas: 
-        "dia menum"
-        "noche menum";
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    #MenuDia {
-        grid-area: dia;
-        display: flex;
-        flex-direction: column;
-    }
-    #MenuNoche{
-        grid-area: noche; 
-        display: flex;  
-        flex-direction: column;
-    }
-    .menuText{
-        grid-area: menum;
-        display: flex;
-        flex-direction: column;
-    } 
-}
-
-@media (min-width: 992px) {
-    .MenuMaui {
-        grid-template-areas: 
-        "dia menum noche";
-    }
-    
-}
-
 /*Galeria de imagenes*/
 #galeriaFoto {
-    display: grid;
-    grid-template-areas: 
-    "foto1 foto1 foto2 foto3 foto3"
-    "foto4 foto5 foto2 foto6 foto7"
-    "foto8 foto8 foto2 foto9 foto9"
-    "foto8 foto8 foto2 foto9 foto9";
-    gap: 3px;
-    margin: 20px 0;
+  display: grid;
+  grid-template-areas: "foto1 foto1 foto2 foto3 foto3" "foto1 foto1 foto2 foto3 foto3" "foto4 foto5 foto2 foto6 foto7" "foto8 foto8 foto2 foto9 foto9" "foto8 foto8 foto2 foto9 foto9";
+  gap: 3px;
+  margin: 20px 0;
 }
 
 .foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8, .foto9 {
-    max-width: 100%;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border: solid   rgba(245, 222, 179, 0.84) 1px;
-
+  max-width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: solid rgba(245, 222, 179, 0.84) 1px;
 }
 
 .foto1 {
-    background-image: url(../img/budin.jpg);
-    grid-area: foto1;
+  background-image: url(../img/mauicafe71.jpg);
+  grid-area: foto1;
 }
+
 .foto2 {
-    background-image: url(../img/vino.jpg);
-    grid-area: foto2;
-    height: 100%;
+  background-image: url(../img/mauicafe35.jpg);
+  grid-area: foto2;
+  height: 100%;
 }
+
 .foto3 {
-    background-image: url(../img/medialunas.jpg);
-    grid-area: foto3;
+  background-image: url(../img/mauicafe51.jpg);
+  grid-area: foto3;
 }
+
 .foto4 {
-    background-image: url(../img/mauiBarra.jpg);
-    grid-area: foto4;
-}   
+  background-image: url(../img/mauiBarra.jpg);
+  grid-area: foto4;
+}
+
 .foto5 {
-    background-image: url(../img/vinoEmpanada.jpg);
-    grid-area: foto5;
-}    
+  background-image: url(../img/mauicafe93.jpg);
+  grid-area: foto5;
+}
+
 .foto6 {
-    background-image: url(../img/logoMauiM.png);
-    grid-area: foto6;
-}    
+  background-image: url(../img/logoMauiM.png);
+  grid-area: foto6;
+}
+
 .foto7 {
-    background-image: url(../img/tostadoJyQ.jpg);
-    grid-area: foto7;
-}    
+  background-image: url(../img/mauicafe116.jpg);
+  grid-area: foto7;
+}
+
 .foto8 {
-    background-image: url(../img/cafeRollochocolate.jpg);
-    grid-area: foto8;
-}    
+  background-image: url(../img/mauicafe109.jpg);
+  grid-area: foto8;
+}
+
 .foto9 {
-    background-image: url(../img/chocolatada.jpg);
-    grid-area: foto9;
+  background-image: url(../img/mauicafe158.jpg);
+  grid-area: foto9;
 }
 
 @media (max-width: 991px) {
-    #galeriaFoto {
-        grid-template-areas: 
-        "foto1 foto1 foto2"
-        "foto4 foto5 foto2"
-        "foto6 foto7 foto3"
-        "foto8 foto8 foto9";
-    }
+  #galeriaFoto {
+    grid-template-areas: "foto1 foto1 foto2" "foto4 foto5 foto2" "foto6 foto7 foto3" "foto8 foto8 foto9";
+  }
 }
 @media (max-width: 500px) {
-    #galeriaFoto {
-        display: flex;
-        flex-direction: column;
-    }
+  #galeriaFoto {
+    display: flex;
+    flex-direction: column;
+  }
 }
+/*Menu del restaurnate*/
+.menuMaui {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(255, 235, 205, 0.123);
+}
+
+.menuText {
+  margin: 10px auto;
+}
+.menuText div {
+  margin: 20px;
+}
+.menuText ul {
+  list-style: none;
+  display: inline;
+  margin: 10px 20px;
+}
+.menuText h2 {
+  color: #4a609a;
+  font-style: oblique;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 5px;
+}
+
+.menuDia {
+  display: none;
+}
+
+.menuNoche {
+  display: none;
+}
+
+/* card de menu*/
+.card-menu {
+  background-color: rgba(0, 0, 0, 0.781);
+  color: antiquewhite;
+  width: 200px;
+  padding: 10px;
+  margin: 20px auto;
+  text-align: center;
+}
+.card-menu img {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.card-menu p {
+  margin-bottom: 10px;
+}
+.card-menu h3 {
+  margin: 15px;
+}
+
+@media (min-width: 768px) {
+  .menuMaui {
+    display: grid;
+    grid-template-areas: "dia menum" "noche menum";
+    justify-content: space-around;
+    align-items: center;
+  }
+  .menuDia {
+    grid-area: dia;
+    display: flex;
+    flex-direction: column;
+  }
+  .menuNoche {
+    grid-area: noche;
+    display: flex;
+    flex-direction: column;
+  }
+  .menuText {
+    grid-area: menum;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 992px) {
+  .menuMaui {
+    grid-template-areas: "dia menum noche";
+  }
+}
+.mapa {
+  padding: 15px;
+  margin: 10px;
+}
+.mapa p {
+  background-color: rgba(250, 235, 215, 0.75);
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  size: 2rem;
+}
+
+.mapa-map {
+  width: 260px;
+  height: 190px;
+}
+
+@media (min-width: 768px) {
+  .mapa {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .mapa p {
+    margin: 15px;
+  }
+  .mapa-map {
+    width: 400px;
+    height: 300px;
+  }
+}
+/*Foemulario de contactos*/
+.formulario {
+  background-color: #4a609a;
+  width: 450px;
+  border: solid black 2px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 20%;
+}
+.formulario div {
+  margin-top: 5px;
+}
+
+.contactos-text {
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+  background-color: rgba(39, 34, 34, 0.968);
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+  color: #4a609a;
+  border: solid 2px #4a609a;
+}
+
+/*# sourceMappingURL=styles.css.map */

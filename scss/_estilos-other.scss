@@ -1,0 +1,61 @@
+
+.mapa{
+    padding: 15px;
+    margin: 10px;
+    
+    p { 
+        background-color: rgba(250, 235, 215, 0.75);
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        size: 2rem;
+    }
+}
+.mapa-map {
+    width: 260px;
+    height: 190px;
+}
+
+@media (min-width: 768px) {
+    .mapa{
+        display: flex;  
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            margin: 15px;
+        }
+    }
+    .mapa-map{
+        width: 400px;
+        height: 300px;
+    }
+}
+ /*Foemulario de contactos*/ 
+.formulario {  
+    background-color: $color2-page; 
+    width: 450px; 
+    border: solid black 2px; 
+    text-align: center; 
+    padding: 10px; 
+    margin: 20px auto; 
+    border-radius: 20%;
+    
+    div{ 
+        margin-top: 5px; 
+    }
+
+}
+
+.contactos-text {  
+    display: flex;  
+    width: 600px;  
+    margin: 0 auto; 
+    background-color: rgba(39, 34, 34, 0.968);
+    justify-content: center;
+    align-items: center; 
+    padding: 20px 100px;
+    color: $color2-page;
+    border: solid 2px $color2-page;
+} 
