@@ -59,3 +59,14 @@
     color: $color2-page;
     border: solid 2px $color2-page;
 } 
+
+@media (max-width: 500px) {
+    .contactos-text {
+        width: 300px;
+        padding: 10px;
+    }
+    .formulario {
+        width: 300px;
+
+    }
+}
